@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "bf3fcfe0d7deede6c93847081f84e8ab45ba079e",
+    "author": "Najko Jahn <najko.jahn@gmail.com>",
+    "time": "2023-03-17 11:08:55",
+    "files": 5,
+    "merge": true,
+    "message": "Merge pull request #237 from LukasWallrich/main\n\nAdd a (single-session) cache to cr_cn"
+  },
+  "repo": "https://github.com/ropensci/rcrossref",
+  "pkg": "rcrossref"
+}
