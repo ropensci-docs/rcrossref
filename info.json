@@ -1,0 +1,13 @@
+{
+  "commit": {
+    "commit": "357cdbe47a4bfe8308f7b8a04062c6e39a251297",
+    "author": "najahn <najko.jahn@gmail.com>",
+    "time": "2025-08-22T08:11:18Z",
+    "files": 2,
+    "merge": true,
+    "message": "Merge branch 'luismmontilla-patch-1'\n"
+  },
+  "repo": "https://github.com/ropensci/rcrossref",
+  "pkg": "rcrossref",
+  "time": "2026-08-30T07:35:52Z"
+}
