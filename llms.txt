@@ -1,0 +1,145 @@
+# rcrossref: R interface to Crossref APIs
+
+[![cran
+checks](https://badges.cranchecks.info/worst/rcrossref.svg)](https://cran.r-project.org/web/checks/check_results_rcrossref.html)
+[![Project Status: Active - The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![R-check](https://github.com/ropensci/rcrossref/actions/workflows/R-check.yml/badge.svg)](https://github.com/ropensci/rcrossref/actions/workflows/R-check.yml)
+[![codecov](https://codecov.io/gh/ropensci/rcrossref/branch/master/graph/badge.svg)](https://app.codecov.io/gh/ropensci/rcrossref)
+[![rstudio mirror
+downloads](https://cranlogs.r-pkg.org/badges/rcrossref)](https://github.com/r-hub/cranlogs.app)
+[![cran
+version](https://www.r-pkg.org/badges/version/rcrossref)](https://cran.r-project.org/package=rcrossref)
+
+## Crossref documentation
+
+- Crossref API: <https://api.crossref.org/>
+- Crossref’s API issue tracker:
+  <https://crossref.atlassian.net/jira/software/c/projects/CR/issues/>
+- Crossref metadata search API: <https://search.crossref.org/>
+- Crossref DOI Content Negotiation:
+  <https://www.crossref.org/documentation/retrieve-metadata/content-negotiation/>
+- Crossref Text and Data Mining (TDM) Services:
+  www.crossref.org/documentation/retrieve-metadata/rest-api/text-and-data-mining/
+
+## Installation
+
+Stable version from CRAN
+
+``` r
+
+install.packages("rcrossref")
+```
+
+Or development version from GitHub
+
+``` r
+
+remotes::install_github("ropensci/rcrossref")
+```
+
+Load `rcrossref`
+
+``` r
+
+library('rcrossref')
+```
+
+## Register for the Polite Pool
+
+If you are intending to access Crossref regularly you will want to send
+your email address with your queries. This has the advantage that
+queries are placed in the polite pool of servers. Including your email
+address is good practice as described in the Crossref documentation
+(<https://api.crossref.org/swagger-ui/index.html#access>). The second
+advantage is that Crossref can contact you if there is a problem with a
+query.
+
+Details on how to register your email in a call can be found at
+`?rcrossref-package`. To pass your email address to Crossref, simply
+store it as an environment variable in .Renviron like this:
+
+Open file: `file.edit("~/.Renviron")`
+
+Add email address to be shared with Crossref
+`crossref_email= "name@example.com"`
+
+Save the file and restart your R session
+
+To stop sharing your email when using rcrossref simply delete it from
+your .Renviron file.
+
+## Documentation
+
+See <https://docs.ropensci.org/rcrossref/> to get started
+
+## Meta
+
+- Please report any issues or bugs:
+  <https://github.com/ropensci/rcrossref/issues>
+- License: MIT
+- Get citation information for `rcrossref` in R doing
+  `citation(package = 'rcrossref')`
+- Please note that this package is released with a Contributor Code of
+  Conduct (<https://ropensci.org/code-of-conduct/>). By contributing to
+  this project, you agree to abide by its terms.
+
+# Package index
+
+## All functions
+
+- [`cr_abstract()`](https://docs.ropensci.org/rcrossref/reference/cr_abstract.md)
+  : Get abstract
+- [`cr_agency()`](https://docs.ropensci.org/rcrossref/reference/cr_agency.md)
+  : Check the DOI minting agency on one or more dois
+- [`cr_citation_count()`](https://docs.ropensci.org/rcrossref/reference/cr_citation_count.md)
+  : Get a citation count via CrossRef OpenURL
+- [`cr_cn()`](https://docs.ropensci.org/rcrossref/reference/cr_cn.md) :
+  Get citations in various formats from CrossRef.
+- [`cr_funders()`](https://docs.ropensci.org/rcrossref/reference/cr_funders.md)
+  [`cr_funders_()`](https://docs.ropensci.org/rcrossref/reference/cr_funders.md)
+  : Search the CrossRef Fundref API
+- [`cr_journals()`](https://docs.ropensci.org/rcrossref/reference/cr_journals.md)
+  [`cr_journals_()`](https://docs.ropensci.org/rcrossref/reference/cr_journals.md)
+  : Search CrossRef journals
+- [`cr_licenses()`](https://docs.ropensci.org/rcrossref/reference/cr_licenses.md)
+  [`cr_licenses_()`](https://docs.ropensci.org/rcrossref/reference/cr_licenses.md)
+  : Search CrossRef licenses
+- [`cr_members()`](https://docs.ropensci.org/rcrossref/reference/cr_members.md)
+  [`cr_members_()`](https://docs.ropensci.org/rcrossref/reference/cr_members.md)
+  : Search CrossRef members
+- [`cr_prefixes()`](https://docs.ropensci.org/rcrossref/reference/cr_prefixes.md)
+  [`cr_prefixes_()`](https://docs.ropensci.org/rcrossref/reference/cr_prefixes.md)
+  : Search CrossRef prefixes
+- [`cr_r()`](https://docs.ropensci.org/rcrossref/reference/cr_r.md) :
+  Get a random set of DOI's through CrossRef.
+- [`cr_types()`](https://docs.ropensci.org/rcrossref/reference/cr_types.md)
+  [`cr_types_()`](https://docs.ropensci.org/rcrossref/reference/cr_types.md)
+  : Search CrossRef types
+- [`cr_works()`](https://docs.ropensci.org/rcrossref/reference/cr_works.md)
+  [`cr_works_()`](https://docs.ropensci.org/rcrossref/reference/cr_works.md)
+  : Search CrossRef works (articles)
+- [`filter_names()`](https://docs.ropensci.org/rcrossref/reference/filters.md)
+  [`filter_details()`](https://docs.ropensci.org/rcrossref/reference/filters.md)
+  : Get filter details and names.
+- [`get_styles()`](https://docs.ropensci.org/rcrossref/reference/get_styles.md)
+  : Get list of styles from github.com/citation-style-language/styles
+- [`id_converter()`](https://docs.ropensci.org/rcrossref/reference/id_converter.md)
+  : Get a PMID from a DOI, and vice versa.
+- [`rcrossref-defunct`](https://docs.ropensci.org/rcrossref/reference/rcrossref-defunct.md)
+  : Defunct functions in rcrossref
+- [`rcrossref-deprecated`](https://docs.ropensci.org/rcrossref/reference/rcrossref-deprecated.md)
+  : Deprecated functions in rcrossref
+- [`rcrossref-package`](https://docs.ropensci.org/rcrossref/reference/rcrossref-package.md)
+  [`rcrossref`](https://docs.ropensci.org/rcrossref/reference/rcrossref-package.md)
+  : rcrossref
+
+# Articles
+
+### All vignettes
+
+- [Crossref
+  filters](https://docs.ropensci.org/rcrossref/articles/crossref_filters.md):
+- [rcrossref
+  introduction](https://docs.ropensci.org/rcrossref/articles/rcrossref.md):
